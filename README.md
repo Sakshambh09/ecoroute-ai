@@ -46,7 +46,7 @@ flowchart TD
 4. **Synthesize** — citation-backed reasoning via the pluggable inference provider.
 5. **Report** — attach compute-cost + energy breakdown; update the impact ledger.
 
-> **Geographic distances:** `data/cities.json` holds lat/lon for 30 Indian cities.
+> **Geographic distances:** `data/cities.json` holds lat/lon for 29 Indian cities.
 > Known city pairs use real Haversine distance × 1.2 road factor (e.g. Delhi→Jaipur ≈ 282 km).
 > Unknown pairs fall back to a deterministic estimate, and clients may always pass an explicit `distance_km`.
 
@@ -73,7 +73,7 @@ Build_Hackathon/
 │   └── ledger.py               # Persistent carbon-impact ledger (SQLite)
 ├── data/
 │   ├── documents.json          # 16 real emission/regulation/guideline documents
-│   ├── cities.json             # lat/lon for 30 Indian cities (Haversine distances)
+│   ├── cities.json             # lat/lon for 29 Indian cities (Haversine distances)
 │   └── ledger.db               # Persistent carbon-impact ledger (SQLite, auto-created)
 ├── scripts/
 │   ├── build_index.py          # Build persisted FAISS index + chunks

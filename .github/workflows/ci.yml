@@ -25,7 +25,7 @@ jobs:
         run: ruff check .
 
       - name: Mypy (type check)
-        run: mypy main.py api core services || true
+        run: mypy main.py api core services
 
       - name: Pytest
         run: pytest -q
@@ -33,7 +33,7 @@ jobs:
       - name: pip-audit (dependency CVE scan)
         run: |
           pip freeze > /tmp/reqs.txt
-          pip-audit -r /tmp/reqs.txt --no-deps || true
+          pip-audit -r /tmp/reqs.txt --no-deps
 
   docker:
     runs-on: ubuntu-latest
