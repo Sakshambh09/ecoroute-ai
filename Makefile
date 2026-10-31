@@ -1,4 +1,4 @@
-.PHONY: venv install index dev test lint typecheck audit docker demo clean
+.PHONY: venv install index dev test lint typecheck audit docker demo demo-video deck clean
 
 VENV := .venv
 PY := $(VENV)/bin/python
@@ -36,6 +36,9 @@ demo:
 
 demo-video:
 	$(PY) scripts/make_demo_video.py
+
+deck:
+	$(PY) scripts/make_pitch_deck.py
 
 clean:
 	rm -rf .mypy_cache .ruff_cache .pytest_cache
