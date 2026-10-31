@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# Environment
+.env
+
+# Built RAG artifacts (regenerate with: make index)
+data/index.faiss
+data/index.vectors.npy
+data/chunks.json
+data/index.meta.json
+
+# Runtime carbon ledger (created on first query)
+data/ledger.db
+data/ledger.db-shm
+data/ledger.db-wal
+
+# Generated demo video (regenerate with: make demo-video)
+demo/video/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

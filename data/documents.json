@@ -1,0 +1,114 @@
+[
+  {
+    "id": "doc-bs6-emission-norms",
+    "title": "Bharat Stage VI Emission Norms for Commercial Vehicles",
+    "category": "regulation",
+    "region": "india",
+    "content": "Bharat Stage VI (BS-VI) emission norms, effective April 2020, reduce NOx emissions by up to 80% and PM by 70% compared to BS-IV for commercial vehicles. Heavy-duty diesel trucks must meet BS-VI limits of 0.4 g/kWh NOx and 0.01 g/kWh PM. Fleets operating pre-BS-VI vehicles on long-haul routes should prioritize replacement or retrofit with selective catalytic reduction (SCR) systems to cut NOx by 90%."
+  },
+  {
+    "id": "doc-euro6-benchmark",
+    "title": "Euro VI Emission Standards as Global Benchmark",
+    "category": "regulation",
+    "region": "global",
+    "content": "Euro VI limits heavy-duty vehicle NOx to 0.4 g/kWh and particulate matter to 0.01 g/kWh, matching Bharat Stage VI. Euro VI compliance requires exhaust aftertreatment including diesel particulate filters (DPF) and SCR. Routes with sustained low-speed urban driving increase DPF regeneration frequency and can raise effective fuel consumption by 3-5% versus highway cruising."
+  },
+  {
+    "id": "doc-heavy-truck-emission-factor",
+    "title": "Emission Factors: Heavy-Duty Diesel Trucks",
+    "category": "emission-metrics",
+    "region": "global",
+    "content": "A typical 40-ton heavy-duty diesel truck emits approximately 0.95-1.1 kg CO2 per ton-km at 60% load factor, with idle fuel burn accounting for 5-10% of total fuel use in stop-heavy routes. Idling at 1,000 RPM consumes roughly 1.2 liters of diesel per hour, equivalent to 3.2 kg CO2 per hour of idling. Reducing idle time is the single highest-leverage carbon reduction for urban delivery routes."
+  },
+  {
+    "id": "doc-medium-truck-emission-factor",
+    "title": "Emission Factors: Medium-Duty Trucks (7-16 ton)",
+    "category": "emission-metrics",
+    "region": "global",
+    "content": "Medium-duty diesel trucks emit approximately 0.7-0.9 kg CO2 per ton-km at typical 55% load factors. Payload weight directly scales fuel burn: a fully loaded 16-ton truck consumes 22-28% more fuel per km than the same truck at 30% load. Consolidating partial loads into full loads on shared routes reduces per-unit carbon intensity proportionally."
+  },
+  {
+    "id": "doc-light-truck-emission-factor",
+    "title": "Emission Factors: Light Commercial Vehicles",
+    "category": "emission-metrics",
+    "region": "global",
+    "content": "Light commercial diesel vehicles (1.5-3.5 ton GVW) emit approximately 0.6-0.8 kg CO2 per ton-km. Urban stop-and-go driving increases fuel consumption by 15-30% over steady highway speeds due to repeated acceleration cycles. Route planning that minimizes stops and traffic congestion windows reduces effective emissions even at identical distance."
+  },
+  {
+    "id": "doc-electric-van-emission-factor",
+    "title": "Emission Factors: Electric Delivery Vans",
+    "category": "emission-metrics",
+    "region": "global",
+    "content": "Electric delivery vans produce zero tailpipe emissions. Well-to-wheel, using India's current grid mix (~230 g CO2/kWh), an electric van emits approximately 0.15-0.25 kg CO2 per ton-km, a 70-80% reduction versus equivalent diesel light trucks. Electric vans are optimal for urban routes under 150 km range with depot charging. Battery weight adds 10-15% to vehicle mass, partially offsetting the efficiency gain."
+  },
+  {
+    "id": "doc-cng-truck-emission-factor",
+    "title": "Emission Factors: CNG-Powered Trucks",
+    "category": "emission-metrics",
+    "region": "india",
+    "content": "Compressed natural gas (CNG) trucks reduce CO2 emissions by approximately 15-20% versus diesel due to methane's higher hydrogen-to-carbon ratio, and cut NOx by 25-30% and PM by over 90%. CNG is most economical for routes under 400 km where refueling infrastructure is dense. CNG trucks carry 12-18% less payload capacity than diesel equivalents due to cylinder weight."
+  },
+  {
+    "id": "doc-idle-reduction-guideline",
+    "title": "Fleet Guideline: Idle Time Reduction Program",
+    "category": "fleet-guideline",
+    "region": "global",
+    "content": "Industry data shows the average long-haul truck idles 4-6 hours per day. A structured idle-reduction program (engine auto-shutoff, driver incentives, pre-trip climate control) can cut idling by 50-70%, saving 0.6-1.0 liters of diesel per hour avoided. For a 10-truck fleet, this yields approximately 25-40 tons of CO2 reduction annually. Idle reduction should be the first optimization applied before route changes."
+  },
+  {
+    "id": "doc-route-consolidation",
+    "title": "Fleet Guideline: Load Consolidation and Route Merging",
+    "category": "fleet-guideline",
+    "region": "global",
+    "content": "Running two half-loaded trucks on the same corridor produces 1.8-2.2x the carbon of one full truck. Load consolidation reduces vehicle-km per ton of freight, the primary driver of fleet emissions. Best practice: consolidate shipments above 70% load factor, merge routes sharing a corridor of 30+ km, and schedule backhauls to avoid empty return legs. Empty return legs represent 15-25% of wasted fleet emissions in unoptimized networks."
+  },
+  {
+    "id": "doc-eco-driving",
+    "title": "Fleet Guideline: Eco-Driving Practices",
+    "category": "fleet-guideline",
+    "region": "global",
+    "content": "Eco-driving training (smooth acceleration, engine-braking instead of braking, maintaining 55-70 km/h on highways, correct tire inflation) reduces fuel consumption by 8-15% with no hardware investment. Tire under-inflation of 20% below spec increases rolling resistance and fuel burn by 3-5%. Maintaining recommended tire pressure and using aerodynamic fairings on tractors saves a further 5-8% on highway routes."
+  },
+  {
+    "id": "doc-maintenance-emissions",
+    "title": "Fleet Guideline: Maintenance and Emission Control",
+    "category": "fleet-guideline",
+    "region": "global",
+    "content": "Poorly maintained engines emit 20-40% more CO2 and up to 5x more NOx and PM than well-maintained ones. Key interventions: timely DPF regeneration, EGR cooler cleaning, correct injector calibration, and air filter replacement per schedule. A truck with a clogged DPF can see fuel economy drop 10-15% while PM emissions spike. Preventive maintenance schedules should be tied to emission compliance audits."
+  },
+  {
+    "id": "doc-time-window-optimization",
+    "title": "Route Optimization: Time-Window and Traffic-Aware Planning",
+    "category": "optimization",
+    "region": "global",
+    "content": "The shortest route is not always the lowest-carbon route. A route 10% longer but avoiding peak-hour congestion can consume 20-30% less fuel due to reduced stop-and-go idling. Time-window optimization that schedules departures outside peak hours (7-10 AM, 5-9 PM in Indian metros) typically reduces effective emissions by 10-25% versus distance-only routing."
+  },
+  {
+    "id": "doc-alt-fuel-transition",
+    "title": "Sustainability: Alternative Fuel Transition Pathway",
+    "category": "sustainability",
+    "region": "india",
+    "content": "India's National Green Hydrogen Mission targets 5% blended green hydrogen in fuel by 2030. For fleets, the transition pathway is: (1) electrify urban routes under 150 km, (2) CNG for mid-range under 400 km, (3) green hydrogen or battery-electric for long-haul beyond 2027 as infrastructure matures. Each transition step should be modeled against current diesel baselines to quantify carbon savings per corridor."
+  },
+  {
+    "id": "doc-carbon-accounting",
+    "title": "Sustainability: Fleet Carbon Accounting Methodology",
+    "category": "sustainability",
+    "region": "global",
+    "content": "Standard fleet carbon accounting uses the formula: CO2 (kg) = distance (km) x emission factor (kg/km) x load adjustment factor. Diesel emission factor is 2.68 kg CO2 per liter burned; typical heavy truck consumption is 25-30 L/100 km. Scope 1 covers direct vehicle fuel; Scope 3 includes upstream fuel production (~10-15% addition). Baselines must be measured over a full quarter to capture seasonal variation before claiming reduction targets."
+  },
+  {
+    "id": "doc-urban-zero-emission-zones",
+    "title": "Regulation: Urban Zero-Emission Zone Requirements",
+    "category": "regulation",
+    "region": "india",
+    "content": "Several Indian metro authorities are piloting zero-emission zones (ZEVs) restricting internal-combustion commercial vehicles in city cores during daytime hours. Routes entering designated ZEV areas must use electric or hydrogen vehicles after the compliance date. Fleet planners should tag ZEV-restricted segments and automatically exclude diesel vehicles from those route legs, substituting electric vans for last-mile delivery."
+  },
+  {
+    "id": "doc-payload-idle-interaction",
+    "title": "Optimization: Payload Weight vs Idle Fuel Burn Trade-off",
+    "category": "optimization",
+    "region": "global",
+    "content": "Payload weight and idle time are the two dominant, independent drivers of truck emissions. A route with high payload but minimal stops can outperform a lighter, stop-heavy route. Optimization should weight both: effective carbon = (distance x payload-adjusted factor) + (idle_hours x 3.2 kg CO2/hour). Routes with more than 30 minutes of expected idle per 100 km should be restructured or shifted to off-peak windows."
+  }
+]
