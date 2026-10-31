@@ -33,7 +33,7 @@ flowchart TD
     MW --> AG[Agent Orchestrator<br/>agent_service.py]
     AG -->|1. retrieve| RAG[Local RAG Engine<br/>FAISS + BM25 + RRF]
     AG -->|2. compute| RT[Routing & Carbon Engine<br/>routing_service.py]
-    AG -->|3. synthesize| INF[Inference Provider<br/>heuristic | kompact]
+    AG -->|3. synthesize| INF[Inference Provider<br/>heuristic or kompact]
     RAG --> KB[(data/documents.json<br/>→ index.faiss)]
     AG -->|4. response| RESP[QueryResponse<br/>route + carbon + reasoning + cost]
     AG --> MET[Metrics + Impact Ledger<br/>/metrics]
@@ -69,7 +69,8 @@ Build_Hackathon/
 │   ├── rag_service.py          # FAISS + BM25 + RRF, index persistence, degradation
 │   ├── routing_service.py      # Deterministic carbon model + candidate generation
 │   ├── agent_service.py        # Orchestrator: RAG → routing → inference → cost
-│   └── metrics.py              # Prometheus metrics + cumulative CO2 ledger
+│   ├── metrics.py              # Prometheus metrics + in-memory counters
+│   └── ledger.py               # Persistent carbon-impact ledger (SQLite)
 ├── data/
 │   ├── documents.json          # 16 real emission/regulation/guideline documents
 │   ├── cities.json             # lat/lon for 30 Indian cities (Haversine distances)
@@ -77,7 +78,8 @@ Build_Hackathon/
 ├── scripts/
 │   ├── build_index.py          # Build persisted FAISS index + chunks
 │   ├── load_test.py            # Concurrent load test (stdlib, no locust)
-│   └── retrieval_report.py     # recall@k / MRR / precision@k over golden set
+│   ├── retrieval_report.py     # recall@k / MRR / precision@k over golden set
+│   └── make_demo_video.py      # Playwright screen-recording of the web UI
 ├── demo/
 │   └── run_demo.py             # One-command fleet scenario demo
 ├── docs/
@@ -92,6 +94,7 @@ Build_Hackathon/
 │   ├── test_core.py            # config, logger, metrics, inference
 │   ├── test_middleware.py      # auth, rate-limit, request-id, error envelope
 │   ├── test_schemas.py         # Pydantic validation bounds
+│   ├── test_ledger.py          # Persistent ledger record/totals
 │   └── eval/test_retrieval_quality.py  # recall@k on golden queries
 ├── .github/workflows/ci.yml    # ruff → mypy → pytest → pip-audit → docker build
 ├── Dockerfile                  # Multi-stage, non-root, index built at build time
@@ -244,7 +247,7 @@ All settings via environment (see `.env.example`). Key toggles:
 ## Testing & quality
 
 ```bash
-make test        # 71 tests: routing, geo-distance, RAG (BM25+dense), API, core, middleware, schemas, retrieval eval
+make test        # 77 tests: routing, geo-distance, RAG (BM25+dense), API, core, middleware, schemas, ledger, retrieval eval
 make lint        # ruff
 make typecheck   # mypy
 make audit       # pip-audit (CVE scan)
